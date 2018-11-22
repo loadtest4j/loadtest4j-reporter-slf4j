@@ -1,4 +1,7 @@
-# loadtest4j-reporter-slf4j
+# loadtest4j-slf4j
+
+[![Build Status](https://travis-ci.com/loadtest4j/loadtest4j-reporter-slf4j.svg?branch=master)](https://travis-ci.com/loadtest4j/loadtest4j-reporter-slf4j)
+[![Codecov](https://codecov.io/gh/loadtest4j/loadtest4j-reporter-slf4j/branch/master/graph/badge.svg)](https://codecov.io/gh/loadtest4j/loadtest4j-reporter-slf4j)
 
 SLF4J reporter for [loadtest4j](https://github.com/loadtest4j/loadtest4j).
 
@@ -14,7 +17,9 @@ Add this library to your project's `pom.xml`:
 </dependency>
 ```
 
-**Note:** Reporters reference loadtest4j in `provided` scope. This means you must 'provide' it separately. A Driver will provide it automatically:
+**Note:** Reporters reference the core loadtest4j library in `provided` scope. All standard Drivers will provide it automatically. If you are not using a standard Driver, you must add `org.loadtest4j:loadtest4j` to your `pom.xml`.
+
+**Note:** SLF4J requires an appender to work. Your Driver or Web framework (such as Dropwizard) may provide one automatically. If not, you must add an appender (such as Logback) to your `pom.xml`.
 
 ```xml
 <dependencies>
