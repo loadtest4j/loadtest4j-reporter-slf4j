@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/loadtest4j/loadtest4j-reporter-slf4j.svg?branch=master)](https://travis-ci.com/loadtest4j/loadtest4j-reporter-slf4j)
 [![Codecov](https://codecov.io/gh/loadtest4j/loadtest4j-reporter-slf4j/branch/master/graph/badge.svg)](https://codecov.io/gh/loadtest4j/loadtest4j-reporter-slf4j)
+[![Maven Central](https://img.shields.io/maven-central/v/org.loadtest4j.reporters/loadtest4j-slf4j.svg)](http://repo2.maven.org/maven2/org/loadtest4j/reporters/loadtest4j-slf4j/)
 
 SLF4J reporter for [loadtest4j](https://github.com/loadtest4j/loadtest4j).
 
